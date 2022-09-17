@@ -19,7 +19,7 @@ function DeliveryListItem({ item }) {
 function DeliveryList({ items }) {
 
     return <ul>{items.map((item) => {
-        return <li><DeliveryListItem item={item} /></li>
+        return <li key={item.id}><DeliveryListItem item={item} /></li>
     })} </ul>;
 }
 
